@@ -616,12 +616,16 @@ video {
   inset: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-\[100\%\] {
   top: 100%;
 }
 
-.z-10 {
-  z-index: 10;
+.z-\[100\] {
+  z-index: 100;
 }
 
 .mx-auto {
@@ -631,6 +635,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.ms-0 {
+  margin-inline-start: 0px;
 }
 
 .block {
@@ -803,6 +811,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pe-0 {
+  padding-inline-end: 0px;
 }
 
 .text-center {

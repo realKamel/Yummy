@@ -16,30 +16,28 @@
 		</section>
 		<!-- End Loader -->
 		<!-- SideNav -->
-		<nav class="flex fixed z-10">
-			<div id="innerNavBar">
-				<div
-					class="flex h-screen p-6 bg-main-black flex-col justify-between whitespace-nowrap">
-					<ul class="mb-4">
-						<li class="py-2 cursor-pointer">Search</li>
-						<li class="py-2 cursor-pointer">Categories</li>
-						<li class="py-2 cursor-pointer">Area</li>
-						<li class="py-2 cursor-pointer">Ingredients</li>
-						<li class="py-2 cursor-pointer">Contact Us</li>
-					</ul>
-					<div class="nav-footer">
-						<div class="icons">
-							<i class="fa-brands fa-facebook"></i>
-							<i class="fa-brands fa-twitter"></i>
-							<i class="fa-solid fa-globe"></i>
-						</div>
-						<p>Copyright Â© 2019 All Rights</p>
-						<p class="mb-4">Reserved.</p>
+		<div id="navBar" class="flex fixed z-[100] top-0">
+			<div id="innerNavBar"
+				class="flex h-screen p-6 bg-main-black flex-col justify-between whitespace-nowrap">
+				<ul class="mb-4 overflow-hidden pe-0 ms-0">
+					<li class="py-2 cursor-pointer relative">Search</li>
+					<li class="py-2 cursor-pointer relative">Categories</li>
+					<li class="py-2 cursor-pointer relative">Area</li>
+					<li class="py-2 cursor-pointer relative">Ingredients</li>
+					<li class="py-2 cursor-pointer relative">Contact Us</li>
+				</ul>
+				<div class="nav-footer">
+					<div class="icons">
+						<i class="fa-brands fa-facebook"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-solid fa-globe"></i>
 					</div>
+					<p>Copyright Â© 2019 All Rights</p>
+					<p class="mb-4">Reserved.</p>
 				</div>
 			</div>
 			<div id="outterNavBar"
-				class="h-screen bg-main-white w-fit flex flex-col justify-between items-center px-2 py-6">
+				class=" h-screen bg-main-white w-fit flex flex-col justify-between items-center px-2 py-6">
 				<div class="logo size-[50px]">
 					<img src="./images/logo.png" class="w-full" alt="logo">
 				</div>
@@ -50,12 +48,14 @@
 					<i class="text-main-black cursor-pointer fa-solid fa-share-nodes "></i>
 				</div>
 			</div>
-		</nav>
+		</div>
 
 		<div class="container mx-auto">
 			<div id="dataRow" class="grid gap-6 md:grid-cols-4 py-12">
-				<div class="rounded-md cursor-pointer relative overflow-hidden bg-red-500 group/card">
-					<div class="absolute duration-500 rounded-md size-full bg-card-background bg-opacity-50 p-2 text-black flex items-center top-[100%] group-hover/card:top-0">
+				<div
+					class="rounded-md cursor-pointer relative overflow-hidden bg-red-500 group/card">
+					<div
+						class="absolute duration-500 rounded-md size-full bg-card-background bg-opacity-50 p-2 text-black flex items-center top-[100%] group-hover/card:top-0">
 						<h3>Corba</h3>
 					</div>
 					<img class="w-full rounded-md" src="./images/test.jpg" alt>
