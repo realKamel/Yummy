@@ -8,38 +8,42 @@
 		<link rel="stylesheet" href="./css/output.css">
 		<title>Yummy</title>
 	</head>
-	<body class="bg-main-black text-main-white">
+	<body class="bg-main-black text-main-white relative">
 		<!-- Loader -->
 		<section
-			class="hidden z-15 inset-0 bg-main-black fixed flex justify-center items-center">
+			class="hidden flex z-15 inset-0 bg-main-black fixed  justify-center items-center">
 			<i class="fa-solid fa-spinner fa-spin fa-5x"></i>
 		</section>
+		<!-- End Loader -->
 		<!-- SideNav -->
 		<nav class="flex fixed z-10">
-			<div class="hidden innerbar p-6 w-fit flex flex-col justify-between">
-				<ul class="mb-4">
-					<li class="py-2 cursor-pointer">Search</li>
-					<li class="py-2 cursor-pointer">Categories</li>
-					<li class="py-2 cursor-pointer">Area</li>
-					<li class="py-2 cursor-pointer">Ingredients</li>
-					<li class="py-2 cursor-pointer">Contact Us</li>
-				</ul>
-				<div class="nav-footer">
-					<div class="icons">
-						<i class="fa-brands fa-facebook"></i>
-						<i class="fa-brands fa-twitter"></i>
-						<i class="fa-solid fa-globe"></i>
+			<div id="innerNavBar">
+				<div
+					class="flex h-screen p-6 bg-main-black flex-col justify-between whitespace-nowrap">
+					<ul class="mb-4">
+						<li class="py-2 cursor-pointer">Search</li>
+						<li class="py-2 cursor-pointer">Categories</li>
+						<li class="py-2 cursor-pointer">Area</li>
+						<li class="py-2 cursor-pointer">Ingredients</li>
+						<li class="py-2 cursor-pointer">Contact Us</li>
+					</ul>
+					<div class="nav-footer">
+						<div class="icons">
+							<i class="fa-brands fa-facebook"></i>
+							<i class="fa-brands fa-twitter"></i>
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<p>Copyright Â© 2019 All Rights</p>
+						<p class="mb-4">Reserved.</p>
 					</div>
-					<p>Copyright Â© 2019 All Rights</p>
-					<p class="mb-4">Reserved.</p>
 				</div>
 			</div>
-			<div
-				class="outterbar h-screen bg-main-white w-fit flex flex-col justify-between items-center px-2 py-6">
+			<div id="outterNavBar"
+				class="h-screen bg-main-white w-fit flex flex-col justify-between items-center px-2 py-6">
 				<div class="logo size-[50px]">
 					<img src="./images/logo.png" class="w-full" alt="logo">
 				</div>
-				<i
+				<i id="openCloseBtn"
 					class="block text-[2rem] text-main-black cursor-pointer fa-solid fa-bars "></i>
 				<div class="icons text-center">
 					<i class="text-main-black block cursor-pointer fa-solid fa-globe "></i>
@@ -48,18 +52,10 @@
 			</div>
 		</nav>
 
-		<div class="container mx-auto ">
-			<div id="dataRow" class="grid gap-6 md:grid-cols-4 py-12 px-6">
-				<div class="rounded-md cursor-pointer relative overflow-hidden group/card">
-					<div
-						class="absolute duration-500 rounded-md w-full h-full bg-[#f9f6f6ca] bg-opacity-50 p-2 text-black flex items-center top-[100%] group-hover/card:top-[0]">
-						<h3>Corba</h3>
-					</div>
-					<img class="w-full rounded-md" src="./images/test.jpg" alt>
-				</div>
-				<div class="rounded-md cursor-pointer relative overflow-hidden group/card">
-					<div
-						class="absolute duration-500 rounded-md w-full h-full bg-[#f9f6f6ca] bg-opacity-50 p-2 text-black flex items-center top-[100%] group-hover/card:top-[0]">
+		<div class="container mx-auto">
+			<div id="dataRow" class="grid gap-6 md:grid-cols-4 py-12">
+				<div class="rounded-md cursor-pointer relative overflow-hidden bg-red-500 group/card">
+					<div class="absolute duration-500 rounded-md size-full bg-card-background bg-opacity-50 p-2 text-black flex items-center top-[100%] group-hover/card:top-0">
 						<h3>Corba</h3>
 					</div>
 					<img class="w-full rounded-md" src="./images/test.jpg" alt>
