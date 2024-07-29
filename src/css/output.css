@@ -849,6 +849,10 @@ h3 {
   margin-top: 1.25rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1013,6 +1017,10 @@ h3 {
   background-color: rgb(249 246 246 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1057,6 +1065,11 @@ h3 {
 .py-\[1\.5rem\] {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pe-0 {
@@ -1108,6 +1121,11 @@ h3 {
 .text-main-white {
   --tw-text-opacity: 1;
   color: rgb(249 246 246 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow {
