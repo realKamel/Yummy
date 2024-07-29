@@ -60,7 +60,7 @@ $( "#openCloseBtn" ).on( "click", function () {
 		closeSideNav();
 	}
 } );
-searchListItem.addEventListener( "click", function () {
+$( searchListItem ).on( "click", function () {
 	closeSideNav();
 	searchBox.innerHTML = `<div class="py-[1.5rem] gap-6 grid justify-items-center md:grid-cols-2">
 				<input id="searchByMealName" onkeyup=searchContentByName(this.value) type="text" placeholder="Search by Name" class="bg-main-black">
@@ -71,7 +71,7 @@ searchListItem.addEventListener( "click", function () {
 	contactUs.innerHTML = ``;
 	mealDetails.innerHTML = ``;
 } );
-contactListItem.addEventListener( "click", function () {
+$( contactListItem ).on( "click", function () {
 	closeSideNav();
 	dataRow.innerHTML = ``;
 	searchBox.innerHTML = ``;
@@ -162,7 +162,7 @@ contactListItem.addEventListener( "click", function () {
 		repasswordInputFocus = true;
 	} );
 } );
-categoriesListItem.addEventListener( "click", function () {
+$( categoriesListItem ).on( "click", function () {
 	closeSideNav();
 	dataRow.innerHTML = ``;
 	searchBox.innerHTML = ``;
@@ -170,7 +170,7 @@ categoriesListItem.addEventListener( "click", function () {
 	mealDetails.innerHTML = ``;
 	fetchCategories();
 } );
-areaListItem.addEventListener( "click", function () {
+$( areaListItem ).on( "click", function () {
 	closeSideNav();
 	dataRow.innerHTML = ``;
 	searchBox.innerHTML = ``;
@@ -178,7 +178,7 @@ areaListItem.addEventListener( "click", function () {
 	mealDetails.innerHTML = ``;
 	fetch();
 } );
-ingredientsListItem.addEventListener( "click", function () {
+$( ingredientsListItem ).on( "click", function () {
 	closeSideNav();
 	dataRow.innerHTML = ``;
 	searchBox.innerHTML = ``;
